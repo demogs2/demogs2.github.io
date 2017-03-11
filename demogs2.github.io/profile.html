@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nuestra aplicación</title>
+
+  <!-- CSS  -->
+  <!--Import Google Icon Font-->
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Nombre</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <form action="search.html">
+            <div class="input-field">
+              <input id="search" type="search" required placeholder="Buscar cursos">
+
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </li>
+        <li><a href="search.html"><i class="material-icons">search</i></a></li>
+        <li><a href="logged.html">Inicio</a></li>
+        <li><a href="profile.html">Mi perfil</a></li>
+        <li><a href="index.html">Log out</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Inicio</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+    <div class="container center">
+      <div class="container">
+        <h2 class="teal-text text-lighten-2">Datos personales</h2>
+        </br>
+        </br>
+        </br>
+        <div class="row">
+          <div class="col s12">
+            <div class="container">
+              <table class="centered highlight">
+                <tbody>
+                  <tr>
+                    <td>Nombre</td>
+                    <td>Daniel</td>
+                  </tr>
+                  <tr>
+                    <td>Apellidos</td>
+                    <td>Pérez Vega</td>
+                  </tr>
+                  <tr>
+                    <td>Edad</td>
+                    <td>999</td>
+                  </tr>
+                  <tr>
+                    <td>E-mail</td>
+                    <td>danisitu_tuyo@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </br>
+  </br>
+      <div class="container">
+        <div class="row">
+          <div class="left">
+                <table class="highlight centered">
+                  <thead>
+                    <tr>
+                        <th data-field="id">Cursando actualmente</th>
+                        <th data-field="name">Cursos terminados</th>
+                        <th data-field="price">Cursos pendientes</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Unity - Creación de videojuegos 3D.</td>
+                      <td>Unreal - Desarrollo de videojuegos. <a href="">Añadir al CV</a></td>
+                      <td>Android - Aplicaciones móviles.</td>
+                    </tr>
+                    <tr>
+                      <td>Aplicaciones Web.</td>
+                      <td>Diseño 3D. <a href="">Añadir al CV</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Cocina avanzada.</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+                <div class="right">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                          <ul class="tabs">
+                            <li class="tab col s4"><a href="#test1">Formato estándar europeo</a></li>
+                            <li class="tab col s4"><a href="#test2">Formato trabajador avanzado</a></li>
+                            <li class="tab col s4"><a href="#test3">Formato simple</a></li>
+                          </ul>
+                        </div>
+
+                        <div id="test1" class="col s12">Aplicaciones Web Diseño 3D</div>
+                        <div id="test2" class="col s12">Relleno</div>
+                        <div id="test3" class="col s12">Relleno</div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../bin/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('.parallax').parallax();
+      $('.slider').slider({});
+      $(".button-collapse").sideNav();
+  });
+</script>
+  </body>
+</html>
