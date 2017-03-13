@@ -2767,8 +2767,8 @@ video.responsive-video {
   position: absolute;
   left: 50%;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 50%;
+  min-height: 50%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -4845,7 +4845,7 @@ small {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #ee6e73;
+  color: #212121;
 }
 
 .tabs .tab.disabled a,
@@ -4858,7 +4858,8 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  color: #212121 ;
+  background-color: #212121  !important;
   will-change: left, right;
 }
 

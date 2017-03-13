@@ -29,7 +29,7 @@
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Nombre</a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <form>
+          <form action="search.html">
             <div class="input-field">
               <input id="search" type="search" required placeholder="Buscar cursos">
 
@@ -40,7 +40,6 @@
         <li><a href="search.html"><i class="material-icons">search</i></a></li>
         <li><a href="logged.html">Inicio</a></li>
         <li><a href="profile.html">Mi perfil</a></li>
-        <li><a href="#">Mi CV</a></li>
         <li><a href="index.html">Log out</a></li>
       </ul>
 
@@ -65,7 +64,33 @@
       </div>
       <div class="parallax"><img src="http://materializecss.com/images/parallax1.jpg"></div>
     </div>
-
+    <div class="left">
+      <div class="container">
+        <div class="row">
+          <div class="col s4">
+            <h5>Filtrado de búsqueda</h5>
+            <form action="#">
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box1"  />
+                <label for="filled-in-box1">Gratuito</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box2"  />
+                <label for="filled-in-box2">Exclusivo</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box3"  />
+                <label for="filled-in-box3">Presencial</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box4"  />
+                <label for="filled-in-box4">No presencial</label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col s4">
@@ -80,6 +105,9 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Unity - Creación de videojuegos 3D<i class="material-icons right">close</i></span>
               <p>Curso orientado al desarrollo profesional de videojuegos 3D en el motor gráfico Unity3D.</p>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Inscribirse
+                 <i class="material-icons right">send</i>
+              </button>
             </div>
           </div>
         </div>
@@ -95,6 +123,9 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Unreal - Desarrollo de videojuegos<i class="material-icons right">close</i></span>
               <p>Curso orientado al desarrollo profesional de videojuegos en Unreal</p>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Inscribirse
+                 <i class="material-icons right">send</i>
+              </button>
             </div>
           </div>
         </div>
