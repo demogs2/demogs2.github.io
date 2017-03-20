@@ -21,18 +21,9 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CoursEncounters</a>
       <ul class="right hide-on-med-and-down">
-        <li>
-          <form action="search.html">
-            <div class="input-field">
-              <input id="search" type="search" required placeholder="Buscar cursos">
-
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </li>
-        <li><a href="search.html"><i class="material-icons">search</i></a></li>
         <li><a href="logged.html">Inicio</a></li>
         <li><a href="profile.html">Mi perfil</a></li>
+        <li><a href="my_cv.html">Mi CV</a></li>
         <li><a href="index.html">Log out</a></li>
       </ul>
 
@@ -42,133 +33,204 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div class="parallax-container">
-
-          <div class="section no-pad-bot">
-            <div class="container">
-              <br><br>
-              <h1 class="header center teal-text text-lighten-2">¡Bienvenido a nuestra demo de CoursEncounters!</h1>
-              <div class="row center">
-                <h5 class="header col s12 light">Una pequeña muestra de nuestros futuros cursos</h5>
+  <div class="container" style="width:2100px;">
+      <div class="row" >
+        <div class="col s2">
+                <h5>Filtrado de búsqueda</h5>
+                <form action="#">
+                  <ul id="myUL">
+                   <li><a class="header">Precio</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box1"  />
+                     <label for="filled-in-box1">Gratuito</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box2"  />
+                     <label for="filled-in-box2">Menos de 10 euros</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box17"  />
+                     <label for="filled-in-box17">Entre 10-50 euros</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box18"  />
+                     <label for="filled-in-box18">Más de 50 euros</label>
+                   </p></li>
+                   <li><a class="header">Idioma</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box3"  />
+                     <label for="filled-in-box3">Español</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box4"  />
+                     <label for="filled-in-box4">Inlgés</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box5"  />
+                     <label for="filled-in-box5">Francés</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box6"  />
+                     <label for="filled-in-box6">Alemán</label>
+                   </p></li>
+                   <li><a class="header">Acreditación</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box7"  />
+                     <label for="filled-in-box7">Con acreditación</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box8"  />
+                     <label for="filled-in-box8">Sin acreditación</label>
+                   </p></li>
+                   <li><a class="header">Presencial</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box9"  />
+                     <label for="filled-in-box9">Si</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box10"  />
+                     <label for="filled-in-box10">No</label>
+                   </p></li>
+                   <li><a class="header">Estado actual</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box11"  />
+                     <label for="filled-in-box11">Sin empezar</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box12"  />
+                     <label for="filled-in-box12">Empezado</label>
+                   </p></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box13"  />
+                     <label for="filled-in-box13">Terminado</label>
+                   </p></li>
+                   <li><a class="header">Duración</a></li>
+                   <li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box14"  />
+                     <label for="filled-in-box14">Menos de 1 mes</label>
+                   </p></li><li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box15"  />
+                     <label for="filled-in-box15">Entre 1 y 4 meses</label>
+                   </p></li><li><p>
+                     <input type="checkbox" class="filled-in" id="filled-in-box16"  />
+                     <label for="filled-in-box16">Más de 4 meses</label>
+                   </p></li>
+                  </ul>
+                </form>
+          </div>
+  		  <div class="container">
+    			<div class="row " style="height: 75px; padding-left:100px; width: 1400px">
+      			<div class="col s6">
+      			<form action="search.html">
+      			  <div class="input-field">
+        				<input id="search" type="search" required>
+        				<i class="material-icons">close</i>
+      			  </div>
+      			</form>
+      		  </div>
+            <br>
+      		  <div class="col s3">
+      			<a href="search.html "class="waves-effect waves-light btn"><i class="material-icons right">search</i>Buscar</a>
+      		  </div>
+    		  </div>
+          <div class="container">
+            <div class="row" style="height: 300px">
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Unity - Creación de videojuegos 3D<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Unity - Creación de videojuegos 3D<i class="material-icons right">close</i></span>
+                    <p>Curso orientado al desarrollo profesional de videojuegos 3D en el motor gráfico Unity3D.</p>
+                    <p><a href="index_unity.html">Página del curso</a></p>
+                  </div>
+                </div>
               </div>
-              <br><br>
-
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Unreal - Temper<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Unreal - Temper<i class="material-icons right">close</i></span>
+                    <p>Curso orientado al desarrollo profesional de videojuegos en Unreal</p>
+                    <p><a href="index_temper.html">Página del curso</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Android - Aplicaciones móviles<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Android - Aplicaciones móviles<i class="material-icons right">close</i></span>
+                    <p>Curso especializado en el desarrollo de aplicaciones móvil en Android utilizando Java</p>
+                    <p><a href="#">Página del curso</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Aplicaciones Web<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Aplicaciones Web<i class="material-icons right">close</i></span>
+                    <p>Curso especializado en el desarrollo web con JavaEE</p>
+                    <p><a href="#">Página del curso</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Cocina avanzada<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Cocina avanzada<i class="material-icons right">close</i></span>
+                    <p>Aprende a cocinar los platos más populares</p>
+                    <p><a href="#">Página del curso</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s4">
+                <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="imgs/office.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Diseño 3D<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Diseño 3D<i class="material-icons right">close</i></span>
+                    <p>Curso de diseño 3D con blender</p>
+                    <p><a href="#">Página del curso</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-             <div class="parallax"><img src="imgs/student.jpg"></div>
         </div>
-      </div>
-    </div>
   </div>
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Unity - Creación de videojuegos 3D<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Unity - Creación de videojuegos 3D<i class="material-icons right">close</i></span>
-              <p>Curso orientado al desarrollo profesional de videojuegos 3D en el motor gráfico Unity3D.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Unreal - Desarrollo de videojuegos<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Unreal - Desarrollo de videojuegos<i class="material-icons right">close</i></span>
-              <p>Curso orientado al desarrollo profesional de videojuegos en Unreal</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Android - Aplicaciones móviles<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Android - Aplicaciones móviles<i class="material-icons right">close</i></span>
-              <p>Curso especializado en el desarrollo de aplicaciones móvil en Android utilizando Java</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Aplicaciones Web<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Aplicaciones Web<i class="material-icons right">close</i></span>
-              <p>Curso especializado en el desarrollo web con JavaEE</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Cocina avanzada<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Cocina avanzada<i class="material-icons right">close</i></span>
-              <p>Aprende a cocinar los platos más populares</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="card small">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/office.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Diseño 3D<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Página del curso</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Diseño 3D<i class="material-icons right">close</i></span>
-              <p>Curso de diseño 3D con blender</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
