@@ -5718,21 +5718,25 @@ label {
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color:    red;
+   opacity: 1 !important;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #d1d1d1;
+  color:    red;
+   opacity: 1 !important;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d1d1d1;
+  color:    red;
+   opacity: 1 !important;
 }
 
 :-ms-input-placeholder {
-  color: #d1d1d1;
+  color:    red;
+   opacity: 1 !important;
 }
 
 /* Text inputs */
